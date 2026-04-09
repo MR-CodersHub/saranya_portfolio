@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | James Adams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html">ADAMS<span>.</span></a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="subpage-main">
+        <header class="page-header container">
+            <h1 class="page-title">My <span class="highlight">Resume</span></h1>
+            <p class="page-subtitle">A detailed overview of my academic journey, technical skills, and professional aspirations.</p>
+            <div class="header-btns" style="margin-top: 2rem;">
+                <a href="resume.pdf" class="btn primary-btn" download><i class="fas fa-download"></i> Download PDF Version</a>
+            </div>
+        </header>
+
+        <section class="resume-container container">
+            <div class="resume-paper">
+                <!-- Profile Summary -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title"><i class="fas fa-user-circle"></i> Profile Summary</h2>
+                    <p>Highly motivated Bachelor of Computer Applications (BCA) student with a passion for software engineering and modern web technologies. Proactive learner with strong analytical skills and a proven track record of developing functional academic projects. Dedicated to building scalable applications and contributing to innovative development teams.</p>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <span>2023 - Present</span>
+                        </div>
+                        <p class="institution">Example University of Technology</p>
+                        <p>Current Aggregate: 8.5 CGPA | Focused on Software Engineering, Database Management, and Web Technologies.</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h3>High Secondary School (Science)</h3>
+                            <span>2021 - 2023</span>
+                        </div>
+                        <p class="institution">St. Xavier's Senior Secondary</p>
+                        <p>Specialized in Physics, Chemistry, and Mathematics. Graduated with honors.</p>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title"><i class="fas fa-tools"></i> Technical Skills</h2>
+                    <div class="resume-skills-grid">
+                        <div class="skill-group">
+                            <h4>Languages</h4>
+                            <p>C, C++, Java, Python, JavaScript, PHP</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Web Technologies</h4>
+                            <p>HTML5, CSS3, ES6+, Bootstrap, Node.js, Express</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Databases</h4>
+                            <p>MySQL, SQLite, PostgreSQL</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Tools & Others</h4>
+                            <p>Git, GitHub, Linux (Ubuntu), VS Code, Figma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title"><i class="fas fa-code-branch"></i> Key Projects</h2>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h3>Student Management System</h3>
+                            <span>Java, MySQL</span>
+                        </div>
+                        <p>Developed a centralized desktop application for academic record management, focusing on database normalization and user authentication.</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h3>Real-time PulseChat</h3>
+                            <span>Node.js, Socket.io</span>
+                        </div>
+                        <p>Implemented a real-time communication platform using web sockets, facilitating low-latency messaging between multiple clients.</p>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+                    <ul class="resume-list">
+                        <li>Google Data Analytics Professional Certificate (Coursera)</li>
+                        <li>Full-Stack Web Development Bootcamp (Udemy)</li>
+                        <li>Responsive Web Design Certification (FreeCodeCamp)</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="resume-section contact-summary">
+                    <h2 class="resume-section-title"><i class="fas fa-address-book"></i> Contact Information</h2>
+                    <div class="contact-links">
+                        <span><i class="fas fa-envelope"></i> hello@jamesadams.com</span>
+                        <span><i class="fab fa-linkedin"></i> linkedin.com/in/jamesadams</span>
+                        <span><i class="fab fa-github"></i> github.com/jamesadams</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>&copy; 2026 James Adams. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
