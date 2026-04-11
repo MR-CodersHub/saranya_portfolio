@@ -133,16 +133,26 @@ document.addEventListener('DOMContentLoaded', () => {
         // Handle progress bars
         const progressBars = document.querySelectorAll('.progress');
         progressBars.forEach(bar => {
+            if (bar.dataset.animated) return;
+            
             const barTop = bar.getBoundingClientRect().top;
             if (barTop < window.innerHeight * 0.9) {
-                const width = bar.style.width;
-                if (!bar.dataset.animated) {
-                    bar.style.width = '0';
-                    setTimeout(() => {
-                        bar.style.width = width;
-                        bar.dataset.animated = 'true';
-                    }, 100);
-                }
+                // Pre-animation: mark as animated to prevent multiple triggers
+                bar.dataset.animated = 'true';
+                
+                // Get target width from data-width or current style width
+                const targetWidth = bar.dataset.width || bar.style.width || '0%';
+                
+                // Ensure initial state is 0
+                bar.style.width = '0';
+                
+                // Trigger reflow to ensure the transition happens
+                void bar.offsetWidth;
+
+                // Animate to target
+                setTimeout(() => {
+                    bar.style.width = targetWidth;
+                }, 50);
             }
         });
     };
